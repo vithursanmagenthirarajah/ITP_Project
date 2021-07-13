@@ -107,6 +107,37 @@ class Login extends Component {
       case "OPD In Charge":
         this.props.history.push("/opd_ic_dashboard");
         break;
+      case "Office Management Assistant":
+        this.props.history.push("/ma_dashboard");
+        break;
+      case "Office Inventory Management Assistant":
+        this.props.history.push("/inventory");
+        break;
+      case "Herbal Garden In Charge":
+        this.props.history.push("/herbal_garden");
+        break;
+      case "Pharmacy Pharmacist":
+        this.props.history.push("/pharmacist");
+        break;
+      case "Kitchen Steward":
+        this.props.history.push("/kitchen");
+        break;
+      case "Ward Doctor":
+        this.props.history.push("/wardDoctor");
+        break;
+      case "Ward Nurse":
+        this.props.history.push("/wardNurse");
+        break;
+      case "Ward Attendant":
+        this.props.history.push("/wardAttendant");
+        break;
+      case "Ward In Charge":
+        this.props.history.push("/wardInCharge");
+        break;
+      case "Clinic Doctor":
+        console.log(title);
+        this.props.history.push("/clinicDoctor");
+        break;
       default:
         this.props.history.push("/");
     }

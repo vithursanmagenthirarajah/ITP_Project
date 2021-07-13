@@ -41,7 +41,7 @@ router.route("/").get(auth, (req, res) => {
 });
 
 //register a user
-router.route("/register").post(auth, (req, res) => {
+router.route("/register").post((req, res) => {
   const { username, password, name, nic, post, unit, phone, grade } = req.body;
 
   if (!username || !password || !name || !nic) {

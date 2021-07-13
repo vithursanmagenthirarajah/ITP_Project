@@ -30,6 +30,7 @@ export default class ConsultForm extends Component {
     this.setComponent = this.setComponent.bind(this);
     this.viewVisit = this.viewVisit.bind(this);
     this.getVisits = this.getVisits.bind(this);
+    this.onClickDemo = this.onClickDemo.bind(this);
 
     this.state = {
       patient: {},
@@ -314,6 +315,17 @@ export default class ConsultForm extends Component {
     }
   }
 
+  //demo function
+  onClickDemo(e) {
+    e.preventDefault();
+    this.setState({
+      diseaseState: "mild",
+      disease: "Bronchial Asthma",
+      notes:
+        "Asthma affects the airways, which begin just below the throat as a single tube called the trachea. The trachea is situated immediately in front of the esophagus, the passageway that connects the throat with the stomach. The trachea divides inttwslightly narrower tubes called the main bronchi (singular = bronchus). Each main bronchus then divides intprogressively smaller tubes – the smallest are called “bronchioles” – tcarry air tand from microscopic air spaces called alveoli (singular = alveolus). It is in the alveoli that the important work of the lung occurs, exchanging oxygen in the air for carbon dioxide in the blood. The airways (trachea, bronchi, bronchioles) are surrounded by a type of involuntary muscle known as smooth muscle. The airways are lined with a mucus membrane that secretes a fine layer of mucus and fluid. This mucus washes the airways tremove any bacteria, dirt, or other foreign material that might get intthe lungs.",
+    });
+  }
+
   render() {
     return (
       <div>
@@ -514,6 +526,16 @@ export default class ConsultForm extends Component {
                   </Col>
                 </Row>
               </Form>
+              <div style={{ paddingTop: "10px" }}>
+                <Button
+                  size="lg"
+                  block
+                  variant="info"
+                  onClick={this.onClickDemo}
+                >
+                  !!! Demo !!!
+                </Button>
+              </div>
             </Container>
             <ValidationModal
               show={this.state.modalShow}

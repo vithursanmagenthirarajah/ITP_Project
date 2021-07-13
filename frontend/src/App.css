@@ -2,3 +2,323 @@
   text-align: center;
   height: 100%;
 }
+
+.height {
+  margin-top: 25%;
+  height: 500px;
+}
+
+.addinventory {
+  background: white;
+  border-radius: 20px;
+  padding: 30px 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 15px 16px;
+  background: #aaffa9;
+  background: -webkit-linear-gradient(to right, #11ffbd, #aaffa9);
+  background: linear-gradient(to right, #11ffbd, #aaffa9);
+}
+
+.updateinventory {
+  background: white;
+  border-radius: 20px;
+  padding: 30px 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 15px 16px;
+  background: #aaffa9;
+  background: -webkit-linear-gradient(to right, #11ffbd, #aaffa9);
+  background: linear-gradient(to right, #11ffbd, #aaffa9);
+}
+
+.con {
+  background: #a8ff78;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.form-container1 {
+  background: white;
+  border-radius: 10px;
+  padding: 30px 80px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: crimson;
+}
+
+.addschedule {
+  height: 100vh;
+  background: #a8ff78;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.addplant {
+  height: 100vh;
+  background: #a8ff78;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.updateschedule,
+.updateplant {
+  height: 100vh;
+  background: #a8ff78;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.color-nav {
+  background-color: rgb(4, 53, 4);
+}
+
+.center {
+  margin: auto;
+  width: 42%;
+  border: 4px solid #090f01;
+  padding: 5px;
+  border-radius: 20px 50px;
+  background-color: #dae2d1;
+}
+
+.center1 {
+  margin: auto;
+  width: 25%;
+  border: 4px solid #090f01;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #bac7ac;
+}
+
+.center2 {
+  margin: auto;
+  width: 30%;
+  border: 4px solid #090f01;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #dae2d1;
+}
+
+.center3 {
+  margin: auto;
+  width: 17%;
+  border: 4px solid #090f01;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #a2ce70;
+}
+
+.containerX {
+  height: 1000px;
+  width: 1000px;
+}
+
+.btnX {
+  color: #008712;
+}
+
+.centerX {
+  border: 10px;
+  padding: 30px 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: 0 15px 16px;
+  justify-content: center;
+  display: flexbox;
+}
+.formX {
+  justify-content: center;
+  align-items: center;
+  vertical-align: 100px;
+}
+
+.form-container1 {
+  background: white;
+  border-radius: 20px;
+  padding: 30px 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 15px 16px;
+  background: #aaffa9;
+  background: -webkit-linear-gradient(to right, #11ffbd, #aaffa9);
+  background: linear-gradient(to right, #11ffbd, #aaffa9);
+}
+
+.Tweet {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #aaffa9;
+  background: -webkit-linear-gradient(to right, #11ffbd, #aaffa9);
+  background: linear-gradient(to right, #11ffbd, #aaffa9);
+}
+
+.Fb {
+  background-color: white;
+  height: 500px;
+  width: 500px;
+  border-radius: 50px;
+  margin-left: 10px;
+  border: 5px solid rgba(0, 0, 0, 0.49);
+}
+
+.Wb {
+  border-radius: 10px;
+  border: 4px solid rgba(0, 0, 0, 0.49);
+}
+
+.vas {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  text-align: center;
+  letter-spacing: 10px;
+  font-style: oblique;
+}
+
+.soor {
+  text-shadow: 2px 2px 5px red;
+}
+
+.par {
+  text-shadow: 5px 5px 3px #696969;
+}
+
+.Fb1 {
+  background-color: white;
+  height: 500px;
+  width: 500px;
+  border-radius: 50px;
+  margin-left: 400px;
+  border: 5px solid rgba(0, 0, 0, 0.49);
+}
+
+.vas1 {
+  text-shadow: 2px 2px 5px #1dbe40;
+}
+
+.vas2 {
+  font-family: Charcoal, sans-serif;
+  text-shadow: 2px 2px 5px rgb(106, 106, 110);
+}
+
+.Thi {
+  background-color: white;
+  color: black;
+  border: 2px solid #0d490f;
+}
+
+.cd {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 25px;
+}
+.cBody {
+  margin-top: 10%;
+}
+.tableBody {
+  margin-left: 50%;
+  margin-right: 40%;
+}
+.react-bs-container-body tr {
+  border-top-style: hidden !important;
+}
+
+.react-bs-container-header tr {
+  border-bottom-style: hidden !important;
+}
+.dcd {
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 25px;
+  height: 500px;
+}
+.margin {
+  margin-right: 10%;
+}
+.font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tForm {
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 25px;
+  height: 950px;
+}
+.vForm {
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 25px;
+  height: 780px;
+}
+.preForm {
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 25px;
+  height: 650px;
+}
+.buttmar {
+  margin-left: 40px;
+}
+.addForm {
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 25px;
+  height: 550px;
+}
+.addtable {
+  margin-left: 15px;
+  margin-right: 55px;
+}
+.logo {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+.editform {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 25px;
+  height: 550px;
+}
+.editcard {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 25px;
+  height: 550px;
+}
+.preForm2 {
+  margin-top: 4%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 25px;
+  height: 550px;
+}
+.dietForm {
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 25px;
+  height: 550px;
+}

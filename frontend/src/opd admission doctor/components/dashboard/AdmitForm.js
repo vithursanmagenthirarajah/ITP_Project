@@ -36,6 +36,7 @@ export default class AdmitForm extends Component {
     this.onChangeModeOfOnset = this.onChangeModeOfOnset.bind(this);
     this.onChangeInitialDietPlan = this.onChangeInitialDietPlan.bind(this);
     this.onChangeNotes = this.onChangeNotes.bind(this);
+    this.onClickDemo = this.onClickDemo.bind(this);
 
     this.state = {
       patient: {},
@@ -282,6 +283,32 @@ export default class AdmitForm extends Component {
         }, 3000);
       });
     }
+  }
+
+  //demo function
+  onClickDemo(e) {
+    e.preventDefault();
+    this.setState({
+      civilCondition: "unmarried",
+      birthPlace: "Colombo",
+      religion: "Christianity",
+      nationality: "Sri Lankan",
+      occupataion: "Equipment operator",
+      guardian:
+        "William T. Schaffner, 49 Newgate Street, JOHNSTONE CASTLE, PA5 7RB",
+      income: 70000.0,
+      caseNo: "AD-06",
+      inventory: "Mobile and wallet",
+      housePhysician: "Dr. Hasanka",
+      complaint: "Bronchial Asthma",
+      complaintDuration: 60,
+      ward: "female",
+      modeOfOnset: "none provided",
+      initialDietPlan:
+        "Eat a high protein breakfast. Avoid sugary drinks and fruit juice. Drink water before meals. Eat soluble fiber.",
+      notes:
+        "Rheumatoid Arthritis (RA) is a chronic, systemic inflammatory disorder of unrecognized etiology that primarily involves the joints. RA typically affects the small joints of the hand and foot and can lead to deformity and destruction of the joints due to erosion of cartilage and bone. RA occurs worldwide; its prevalence in the developed countries varies between 0.5% and 2%. It affects women two to three times as often as men with peak onset between the ages of 30 and 55 years. The disease onset is usually insidious (weeks to months), with pain, stiffness, and swelling of multiple joints. Weight loss, low-grade fever, malaise, fatigue, and depression also may be present. Regardless of early asymmetrical involvement, most patients eventually will develop a symmetric inflammatory arthritis.",
+    });
   }
 
   render() {
@@ -675,6 +702,11 @@ export default class AdmitForm extends Component {
                 </Button>
               </div>
             </Form>
+            <div style={{ paddingTop: "10px" }}>
+              <Button size="lg" block variant="info" onClick={this.onClickDemo}>
+                !!! Demo !!!
+              </Button>
+            </div>
           </Container>
           <ValidationModal
             show={this.state.modalShow}

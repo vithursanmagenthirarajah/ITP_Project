@@ -46,6 +46,7 @@ class OpdDrugStore extends Component {
     this.onChangeAvailQuantity = this.onChangeAvailQuantity.bind(this);
     this.onChangeUnit = this.onChangeUnit.bind(this);
     this.onSubmitAdd = this.onSubmitAdd.bind(this);
+    this.onClickDemo = this.onClickDemo.bind(this);
   }
 
   componentDidMount() {
@@ -268,6 +269,17 @@ class OpdDrugStore extends Component {
     }
   }
 
+  //demo function
+  onClickDemo(e) {
+    e.preventDefault();
+    this.setState({
+      drugName: "Dasamoola arista",
+      drugType: "syrup",
+      availQuantity: 1000.0,
+      unit: "ml",
+    });
+  }
+
   render() {
     return (
       <div>
@@ -370,6 +382,16 @@ class OpdDrugStore extends Component {
                       </Button>
                     </div>
                   </Form>
+                  <div style={{ paddingTop: "10px" }}>
+                    <Button
+                      size="lg"
+                      block
+                      variant="info"
+                      onClick={this.onClickDemo}
+                    >
+                      !!! Demo !!!
+                    </Button>
+                  </div>
                   <hr />
                   <ValidationModal
                     show={this.state.modalShow}

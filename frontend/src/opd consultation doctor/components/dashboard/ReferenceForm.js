@@ -22,6 +22,7 @@ export default class ReferenceForm extends Component {
     this.onSubmitRefer = this.onSubmitRefer.bind(this);
     this.onChangeReason = this.onChangeReason.bind(this);
     this.onChangeTreatment = this.onChangeTreatment.bind(this);
+    this.onClickDemo = this.onClickDemo.bind(this);
 
     this.state = {
       patient: {},
@@ -103,6 +104,15 @@ export default class ReferenceForm extends Component {
         });
         this.props.setComponent("dashboard");
       }, 2000);
+    });
+  }
+
+  //demo function
+  onClickDemo(e) {
+    e.preventDefault();
+    this.setState({
+      reason: "need more follow up treatment",
+      treatment: "no treatments provided at the OPD",
     });
   }
 
@@ -238,6 +248,11 @@ export default class ReferenceForm extends Component {
               Complete refering to clinic
             </Button>
           </Form>
+          <div style={{ paddingTop: "10px" }}>
+            <Button size="lg" block variant="info" onClick={this.onClickDemo}>
+              !!! Demo !!!
+            </Button>
+          </div>
         </Container>
       </div>
     );

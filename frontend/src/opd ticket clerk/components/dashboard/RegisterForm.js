@@ -25,6 +25,7 @@ export default class RegisterForm extends Component {
     this.onChangeAddress = this.onChangeAddress.bind(this);
     this.onChangePhone = this.onChangePhone.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    this.onClickDemo = this.onClickDemo.bind(this);
 
     this.state = {
       name: "",
@@ -205,6 +206,19 @@ export default class RegisterForm extends Component {
     }
   }
 
+  //demo function
+  onClickDemo(e) {
+    e.preventDefault();
+    this.setState({
+      name: "Linda G. Clark",
+      nic: "951154321V",
+      dob: new Date("1995-05-06"),
+      gender: "female",
+      address: "76 Newport Road, CARESTON, DD9 1RT",
+      phone: "0771234567",
+    });
+  }
+
   render() {
     return (
       <div>
@@ -333,6 +347,11 @@ export default class RegisterForm extends Component {
             Register patient
           </Button>
         </Form>
+        <div style={{ paddingTop: "10px" }}>
+          <Button size="lg" block variant="info" onClick={this.onClickDemo}>
+            !!! Demo !!!
+          </Button>
+        </div>
         <ValidationModal
           show={this.state.modalShow}
           onHide={() => this.setState({ modalShow: false })}

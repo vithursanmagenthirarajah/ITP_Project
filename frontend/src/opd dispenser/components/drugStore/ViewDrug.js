@@ -48,6 +48,7 @@ class ViewDrug extends Component {
     this.onSubmitDelete = this.onSubmitDelete.bind(this);
     this.toDeleteDrug = this.toDeleteDrug.bind(this);
     this.onSubmitAddDrugAction = this.onSubmitAddDrugAction.bind(this);
+    this.onClickDemo = this.onClickDemo.bind(this);
   }
 
   componentDidMount() {
@@ -341,6 +342,16 @@ class ViewDrug extends Component {
     }
   }
 
+  //demo function
+  onClickDemo(e) {
+    e.preventDefault();
+    this.setState({
+      actionType: "add",
+      amount: 500.0,
+      remarks: "delivered from the main drug store",
+    });
+  }
+
   render() {
     return (
       <div>
@@ -531,6 +542,11 @@ class ViewDrug extends Component {
                 </Button>
               </div>
             </Form>
+            <div style={{ paddingTop: "10px" }}>
+              <Button size="lg" block variant="info" onClick={this.onClickDemo}>
+                !!! Demo !!!
+              </Button>
+            </div>
             <hr />
           </Container>
 
